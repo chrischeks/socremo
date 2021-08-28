@@ -15,7 +15,7 @@
         "expireTimeMs":900000,
         "max":100
     },
-    "PORT":3111},
+    "PORT":5234},
     "username":"RUBIKPAY",
     "password":"1234",
     "SOCREMO_BASE_URL":" http://197.235.17.197:8070/jbank_socremo/services/jbankService?wsdl",

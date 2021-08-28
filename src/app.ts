@@ -17,7 +17,7 @@ import { dbConnection } from './@universal/database/mongo.database';
 import { logger, stream } from './@universal/logger/logger';
 import config from 'config';
 import { limiter } from './@universal/rate-limiter/mongoexpress.limiter';
-const { log, cors: corsConfig } = config.get('config');
+const { log, cors: corsConfig, PORT } = config.get('config');
 const { format } = log;
 const { origin, credentials } = corsConfig;
 
@@ -28,7 +28,7 @@ class App {
 
   constructor(routes: Routes[]) {
     this.app = express();
-    this.port = process.env.PORT || 3111;
+    this.port = PORT || 5234;
     this.env = process.env.NODE_ENV || 'development';
     this.connectToDatabase();
     this.initializeMiddlewares();
