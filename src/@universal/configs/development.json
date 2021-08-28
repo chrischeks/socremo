@@ -1,0 +1,25 @@
+{
+    "config":{
+    "env": "development",
+    "secretKey": "This+Key@Is=Strong-Enough*For&Production#but_Good?Enough()For^This$Assessment",
+    "MONGODB_URL":"mongodb+srv://AccionAdmin:AccionPassword@cluster0.sgtkq.mongodb.net/socremo?authSource=admin&replicaSet=atlas-f55ash-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true",
+    "log": {
+        "format": "dev",
+        "dir": "../logs"
+    },
+    "cors": {
+        "origin": true,
+        "credentials": true
+    },
+    "limiterConfig":{
+        "expireTimeMs":900000,
+        "max":100
+    },
+    "PORT":3111},
+    "username":"RUBIKPAY",
+    "password":"1234",
+    "SOCREMO_BASE_URL":" http://197.235.17.197:8070/jbank_socremo/services/jbankService?wsdl",
+    "authorization": 112233,
+    "SMS_TOKEN":"SCDqGMNKLn_7LDcOOEsG4OQsFbOTVnYRR8T0eVx3Tj4=",
+    "SMS_ACCOUNT_ID":"PL9phwj8f92qu5ZrStwcHg=="
+}
