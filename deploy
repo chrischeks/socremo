@@ -1,8 +1,8 @@
 #!/bin/sh
-ssh root@NODEJSDROPLETIP<<EOF
-   cd /var/www/html/
-   git pull origin master
+ssh chekwube@167.172.100.241<<EOF
+   cd socremo/
+   git pull origin main
    npm install --production
-   pm2 restart all
+   pm2 reload socremo
    exit
 EOF
